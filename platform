@@ -1,0 +1,14 @@
+case $1 in
+start)
+        sh /home/azaoui/java/4.0.3/platform-4.0.3/start_eXo.sh
+        ;;
+stop)  
+        sh /home/azaoui/java/4.0.3/platform-4.0.3/bin/shutdown.sh
+        ;;
+restart)
+        sh /home/azaoui/java/4.0.3/platform-4.0.3/bin/shutdown.sh
+        sh /home/azaoui/java/4.0.3/platform-4.0.3/start_eXo.sh
+        
+        ;;
+esac   
+exit 0
